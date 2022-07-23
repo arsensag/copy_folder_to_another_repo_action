@@ -35,9 +35,12 @@ fi
 
 echo "Copying contents to git repo"
 rm -rf $CLONE_DIR/INPUT_DESTINATION_FOLDER/*
+ls -l $CLONE_DIR/INPUT_DESTINATION_FOLDER/*
+ls -l $CLONE_DIR/INPUT_DESTINATION_FOLDER/*/*
 cp -a $INPUT_SOURCE_FOLDER/. $CLONE_DIR/$INPUT_DESTINATION_FOLDER/
 cd $CLONE_DIR
-ls
+ls -l *
+ls -l */*
 
 echo "Adding git commit"
 git add .
