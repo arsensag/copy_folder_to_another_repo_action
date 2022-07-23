@@ -35,7 +35,7 @@ fi
 
 echo "Copying contents to git repo"
 rm -rf $CLONE_DIR/static
-cp -rf $INPUT_SOURCE_FOLDER/ $CLONE_DIR/
+cp -rf $INPUT_SOURCE_FOLDER/* $CLONE_DIR/
 cd $CLONE_DIR
 ls -l *
 ls -l */*
